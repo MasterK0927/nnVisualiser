@@ -1,0 +1,173 @@
+# Build directories
+build/
+out/
+cmake-build-*/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+nnvisualizer
+neural-network-visualizer
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# vcpkg
+vcpkg_installed/
+
+# Conan
+conandata.yml
+conanfile.txt
+conaninfo.txt
+conanbuildinfo.*
+
+# Package managers
+node_modules/
+.npm
+.yarn/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Documentation
+docs/html/
+docs/latex/
+docs/xml/
+
+# Data files (examples are kept)
+data/*.bin
+data/*.dat
+data/*.csv
+!data/examples/
+
+# Models (examples are kept)
+models/*.bin
+models/*.dat
+!models/examples/
+
+# Screenshots and recordings
+screenshots/
+recordings/
+
+# Profiling data
+*.prof
+*.perf
+callgrind.out.*
+massif.out.*
+
+# Coverage reports
+coverage/
+*.gcov
+*.gcda
+*.gcno
+
+# Sanitizer outputs
+*.san
+
+# Backup files
+*.bak
+*.backup
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# JetBrains
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.vcxproj.filters
+*.VC.db
+*.VC.VC.opendb
+
+# Qt Creator
+CMakeLists.txt.user
+CMakeLists.txt.user.*
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+
+# Android
+*.apk
+*.ap_
+*.dex
+local.properties
+
+# Python (if any Python scripts are added)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Rust (if any Rust components are added)
+target/
+Cargo.lock
+
+# Go (if any Go components are added)
+vendor/
