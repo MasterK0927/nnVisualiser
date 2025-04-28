@@ -1,0 +1,54 @@
+{
+    "name": "neural-network-visualizer",
+    "version": "1.0.0",
+    "description": "Advanced Neural Network Visualization Application",
+    "dependencies": [
+        {
+            "name": "sfml",
+            "version>=": "2.6.0"
+        },
+        {
+            "name": "nlohmann-json",
+            "version>=": "3.11.0"
+        },
+        {
+            "name": "yaml-cpp",
+            "version>=": "0.7.0"
+        },
+        {
+            "name": "eigen3",
+            "version>=": "3.4.0"
+        },
+        {
+            "name": "fmt",
+            "version>=": "9.0.0"
+        },
+        {
+            "name": "spdlog",
+            "version>=": "1.10.0"
+        }
+    ],
+    "features": {
+        "opencv": {
+            "description": "Enable OpenCV support for advanced image processing",
+            "dependencies": [
+                {
+                    "name": "opencv4",
+                    "version>=": "4.5.0"
+                }
+            ]
+        },
+        "cuda": {
+            "description": "Enable CUDA support for GPU acceleration",
+            "dependencies": [
+                "cuda"
+            ]
+        },
+        "testing": {
+            "description": "Enable testing framework",
+            "dependencies": [
+                "gtest"
+            ]
+        }
+    }
+}
