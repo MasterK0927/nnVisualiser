@@ -1,0 +1,53 @@
+{
+    "name": "XOR Problem Solver",
+    "description": "Simple neural network to solve the XOR problem",
+    "layers": [
+        {
+            "size": 2,
+            "activation": "none",
+            "name": "input",
+            "dropout": 0.0
+        },
+        {
+            "size": 4,
+            "activation": "relu",
+            "name": "hidden",
+            "dropout": 0.0
+        },
+        {
+            "size": 1,
+            "activation": "sigmoid",
+            "name": "output",
+            "dropout": 0.0
+        }
+    ],
+    "optimizer": {
+        "type": "adam",
+        "learning_rate": 0.01,
+        "beta1": 0.9,
+        "beta2": 0.999
+    },
+    "loss": "mse",
+    "training": {
+        "batch_size": 4,
+        "epochs": 1000,
+        "validation_split": 0.0,
+        "shuffle": true,
+        "early_stopping": {
+            "patience": 50,
+            "min_delta": 0.0001,
+            "monitor": "loss"
+        }
+    },
+    "visualization": {
+        "layout": "horizontal",
+        "neuron_size": 20,
+        "connection_thickness": 3.0,
+        "color_scheme": "blue_gradient",
+        "animation_speed": 0.5,
+        "show_weights": true,
+        "show_biases": true,
+        "show_activations": true,
+        "layer_spacing": 200
+    }
+}

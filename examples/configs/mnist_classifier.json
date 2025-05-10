@@ -1,0 +1,63 @@
+{
+    "name": "MNIST Digit Classifier",
+    "description": "A simple neural network for MNIST digit classification",
+    "layers": [
+        {
+            "size": 784,
+            "activation": "none",
+            "name": "input",
+            "dropout": 0.0
+        },
+        {
+            "size": 128,
+            "activation": "relu",
+            "name": "hidden1",
+            "dropout": 0.2
+        },
+        {
+            "size": 64,
+            "activation": "relu",
+            "name": "hidden2",
+            "dropout": 0.1
+        },
+        {
+            "size": 10,
+            "activation": "softmax",
+            "name": "output",
+            "dropout": 0.0
+        }
+    ],
+    "optimizer": {
+        "type": "adam",
+        "learning_rate": 0.001,
+        "beta1": 0.9,
+        "beta2": 0.999,
+        "epsilon": 1e-8
+    },
+    "loss": "crossentropy",
+    "training": {
+        "batch_size": 32,
+        "epochs": 100,
+        "validation_split": 0.2,
+        "shuffle": true,
+        "early_stopping": {
+            "patience": 10,
+            "min_delta": 0.001,
+            "monitor": "val_loss"
+        }
+    },
+    "regularization": {
+        "l1": 0.0,
+        "l2": 0.001
+    },
+    "visualization": {
+        "layout": "horizontal",
+        "neuron_size": 15,
+        "connection_thickness": 2.0,
+        "color_scheme": "default",
+        "animation_speed": 1.0,
+        "show_weights": true,
+        "show_biases": true,
+        "show_activations": true
+    }
+}
