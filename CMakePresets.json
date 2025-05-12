@@ -9,7 +9,8 @@
             "binaryDir": "${sourceDir}/build/${presetName}",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Release",
-                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+                "CMAKE_MAKE_PROGRAM": "/home/keshav/.local/bin/ninja"
             }
         },
         {
@@ -47,6 +48,11 @@
             "displayName": "vcpkg Dependencies",
             "description": "Build using vcpkg for dependency management",
             "inherits": "default",
+            "condition": {
+                "type": "notEquals",
+                "lhs": "$env{VCPKG_ROOT}",
+                "rhs": ""
+            },
             "toolchainFile": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
             "cacheVariables": {
                 "USE_VCPKG": "ON",
