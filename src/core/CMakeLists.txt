@@ -4,7 +4,6 @@ set(CORE_SOURCES
     Layer.cpp
     Neuron.cpp
     ActivationFunctions.cpp
-    Optimizers.cpp
     LossFunctions.cpp
     WeightInitializers.cpp
 )
@@ -15,7 +14,6 @@ set(CORE_HEADERS
     ${CMAKE_SOURCE_DIR}/include/core/Layer.hpp
     ${CMAKE_SOURCE_DIR}/include/core/Neuron.hpp
     ${CMAKE_SOURCE_DIR}/include/core/ActivationFunctions.hpp
-    ${CMAKE_SOURCE_DIR}/include/core/Optimizers.hpp
     ${CMAKE_SOURCE_DIR}/include/core/LossFunctions.hpp
     ${CMAKE_SOURCE_DIR}/include/core/WeightInitializers.hpp
     ${CMAKE_SOURCE_DIR}/include/core/Types.hpp
