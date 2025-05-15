@@ -1,26 +1,11 @@
 set(UI_SOURCES
-    UIManager.cpp
-    InputHandler.cpp
-    ConfigPanel.cpp
-    NetworkEditor.cpp
-    TrainingPanel.cpp
-    VisualizationControls.cpp
-    MenuBar.cpp
-    StatusBar.cpp
-    DockingSystem.cpp
+    NetworkPanel.cpp
+    UIPanel.cpp
 )
 
 set(UI_HEADERS
-    ${CMAKE_SOURCE_DIR}/include/ui/UIManager.hpp
-    ${CMAKE_SOURCE_DIR}/include/ui/InputHandler.hpp
-    ${CMAKE_SOURCE_DIR}/include/ui/ConfigPanel.hpp
-    ${CMAKE_SOURCE_DIR}/include/ui/NetworkEditor.hpp
-    ${CMAKE_SOURCE_DIR}/include/ui/TrainingPanel.hpp
-    ${CMAKE_SOURCE_DIR}/include/ui/VisualizationControls.hpp
-    ${CMAKE_SOURCE_DIR}/include/ui/MenuBar.hpp
-    ${CMAKE_SOURCE_DIR}/include/ui/StatusBar.hpp
-    ${CMAKE_SOURCE_DIR}/include/ui/DockingSystem.hpp
-    ${CMAKE_SOURCE_DIR}/include/ui/UIConfig.hpp
+    ${CMAKE_SOURCE_DIR}/include/ui/NetworkPanel.hpp
+    ${CMAKE_SOURCE_DIR}/include/ui/UIPanel.hpp
 )
 
 add_library(nnv_ui STATIC ${UI_SOURCES} ${UI_HEADERS})
@@ -36,13 +21,9 @@ target_include_directories(nnv_ui
 
 target_link_libraries(nnv_ui
     PUBLIC
-        imgui
         nnv_core
         nnv_graphics
         nnv_utils
-        sfml-graphics
-        sfml-window
-        sfml-system
 )
 
 set_target_properties(nnv_ui PROPERTIES
