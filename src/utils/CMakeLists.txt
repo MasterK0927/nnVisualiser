@@ -1,21 +1,14 @@
 set(UTILS_SOURCES
     Logger.cpp
     ConfigManager.cpp
-    FileIO.cpp
     DataLoader.cpp
-    MathUtils.cpp
-    ThreadPool.cpp
-    PerformanceMonitor.cpp
+    Common.cpp
 )
 
 set(UTILS_HEADERS
     ${CMAKE_SOURCE_DIR}/include/utils/Logger.hpp
     ${CMAKE_SOURCE_DIR}/include/utils/ConfigManager.hpp
-    ${CMAKE_SOURCE_DIR}/include/utils/FileIO.hpp
     ${CMAKE_SOURCE_DIR}/include/utils/DataLoader.hpp
-    ${CMAKE_SOURCE_DIR}/include/utils/MathUtils.hpp
-    ${CMAKE_SOURCE_DIR}/include/utils/ThreadPool.hpp
-    ${CMAKE_SOURCE_DIR}/include/utils/PerformanceMonitor.hpp
     ${CMAKE_SOURCE_DIR}/include/utils/Common.hpp
 )
 
