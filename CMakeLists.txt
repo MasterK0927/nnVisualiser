@@ -46,7 +46,7 @@ if(USE_VCPKG)
 endif()
 
 # Find required packages
-# find_package(sfml REQUIRED COMPONENTS system window graphics)  # Disabled for now
+find_package(SFML 2.5 REQUIRED COMPONENTS system window graphics)
 find_package(nlohmann_json REQUIRED)
 
 # Optional packages
