@@ -31,6 +31,9 @@ target_include_directories(nnv_core
 target_link_libraries(nnv_core
     PUBLIC
         nlohmann_json::nlohmann_json
+        sfml-graphics
+        sfml-window
+        sfml-system
     PRIVATE
         nnv_utils
 )
