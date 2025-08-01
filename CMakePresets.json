@@ -9,8 +9,7 @@
             "binaryDir": "${sourceDir}/build/${presetName}",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Release",
-                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
-                "CMAKE_MAKE_PROGRAM": "/home/keshav/.local/bin/ninja"
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
             }
         },
         {
