@@ -8,7 +8,8 @@
         "yaml-cpp",
         "eigen3",
         "fmt",
-        "spdlog"
+        "spdlog",
+        "sfml"
     ],
     "features": {
         "opencv": {
