@@ -59,7 +59,8 @@ vcpkg_installed/
 
 # Conan
 conandata.yml
-conanfile.txt
+# Allow conanfile to be versioned for reproducible builds
+# conanfile.txt
 conaninfo.txt
 conanbuildinfo.*
 
