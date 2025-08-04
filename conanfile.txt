@@ -1,0 +1,23 @@
+[requires]
+sfml/2.6.1
+nlohmann_json/3.11.3
+yaml-cpp/0.8.0
+eigen/3.4.0
+fmt/11.0.2
+spdlog/1.13.0
+gtest/1.14.0
+
+[generators]
+CMakeToolchain
+CMakeDeps
+
+[layout]
+cmake_layout
+
+[options]
+# You can customize options as needed
+sfml:audio=False
+sfml:network=False
+sfml:graphics=True
+sfml:window=True
+sfml:system=True
