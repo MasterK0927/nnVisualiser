@@ -37,9 +37,9 @@ if(COMPILER_SUPPORTS_AVX2)
     add_compile_definitions(USE_AVX2)
 endif()
 
-# Package management setup
-option(USE_VCPKG "Use vcpkg for dependency management" ON)
-option(USE_CONAN "Use Conan for dependency management" OFF)
+# Package management setup (default to Conan)
+option(USE_VCPKG "Use vcpkg for dependency management" OFF)
+option(USE_CONAN "Use Conan for dependency management" ON)
 
 if(USE_VCPKG)
     find_package(PkgConfig REQUIRED)
