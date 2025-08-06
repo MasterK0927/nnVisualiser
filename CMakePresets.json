@@ -63,9 +63,12 @@
             "displayName": "Conan Dependencies",
             "description": "Build using Conan for dependency management",
             "inherits": "default",
+            "binaryDir": "${sourceDir}/build/conan",
+            "toolchainFile": "${sourceDir}/build/conan/conan_toolchain.cmake",
             "cacheVariables": {
                 "USE_VCPKG": "OFF",
-                "USE_CONAN": "ON"
+                "USE_CONAN": "ON",
+                "CMAKE_BUILD_TYPE": "Debug"
             }
         }
     ],
